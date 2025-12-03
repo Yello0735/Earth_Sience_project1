@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interactions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+        
+        <style>
+            /* --- Global & Base Styles --- */
+            :root {
+                --color-primary: #1e88e5; /* Strong Blue */
+                --color-secondary: #00bfa5; /* Teal/Green Accent */
+                --color-text-dark: #212121;
+                --color-background-light: #f5f5f5;
+                --color-background-gradient: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%);
+            }
+
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.7;
+                color: var(--color-text-dark);
+                background: var(--color-background-gradient); /* Fancy Gradient Background */
+                min-height: 100vh;
+            }
+            .container {
+                max-width: 1100px;
+                margin: 40px auto;
+                padding: 0 25px;
+            }
+            
+            /* --- Header and Typography --- */
+            h1 {
+                text-align: center;
+                color: var(--color-primary); 
+                font-weight: 900;
+                font-size: 2.8em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+                padding: 30px 0;
+                margin-bottom: 30px;
+                letter-spacing: 2px;
+                border-bottom: 6px double var(--color-secondary);
+            }
+            h2 {
+                color: var(--color-secondary); 
+                font-weight: 700;
+                font-size: 1.8em;
+                margin-top: 40px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid rgba(0, 191, 165, 0.3);
+            }
+            h3 {
+                color: var(--color-primary); 
+                font-weight: 700;
+                margin-top: 25px;
+                font-size: 1.3em;
+            }
+            h4 {
+                color: #546e7a; /* Muted subtitle color */
+                font-weight: 400;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            /* --- Content Boxes (The Fancy Cards) --- */
+            .section-box {
+                background-color: #ffffff; 
+                padding: 35px;
+                margin-bottom: 35px;
+                border-radius: 15px; /* Softer, rounder corners */
+                /* Stronger, more defined shadow for 'floating' effect */
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+                transition: all 0.4s ease-in-out;
+            }
+
+            .section-box:hover {
+                transform: scale(1.01); /* Subtle zoom effect */
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); 
+            }
+
+            /* --- Lists and Paragraphs --- */
+            p {
+                margin-bottom: 20px;
+                font-weight: 300;
+            }
+            ul {
+                list-style-type: none; 
+                padding-left: 0;
+            }
+            ul li {
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 10px;
+                /* Custom bullet point using a pseudo-element */
+            }
+            ul li::before {
+                content: '✨'; /* Fancy emoji bullet point */
+                position: absolute;
+                left: 0;
+                color: var(--color-secondary);
+                font-size: 1.1em;
+            }
+            
+            strong {
+                color: var(--color-primary);
+                font-weight: 700;
+            }
+
+            /* --- Footer --- */
+            footer {
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+                background-color: rgba(30, 136, 229, 0.8); /* Semi-transparent footer */
+                color: white;
+                font-size: 0.9em;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1>Interactions between Hydrosphere and Geosphere</h1>
+            
+
+            <div class="section-box">
+                <h2>1</h2>
+                <p>...</p>
+                
+                <h3>1.</h3>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+
+                <h3>2.</h3>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+                
+                <h3>3.</h3>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            <div class="section-box">
+                <h2>2</h2>
+                <p>...</p>
+                
+                <h3>1.</h3>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+
+                <h3>2.</h3>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+                
+                <h3>3.</h3>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            
+
+        </div>
+        
+        <footer>
+            &copy; Ojal Sharma
+        </footer>
+    </body>
+</html>
+```

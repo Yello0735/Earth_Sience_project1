@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrosphere</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for aesthetic enhancements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8faff; /* Very light blue/off-white */
+            color: #1f2937; /* Dark gray text */
+        }
+        /* Custom shadow for the main content cards */
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Ensure the image container covers the width and scales */
+        .hero-container {
+            width: 100%;
+            height: 100rem; /* Fixed height for visual consistency on desktop */
+            max-height: 100vh; /* Max height on mobile */
+        }
+        .hero-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        /* Custom styling for the layer definitions */
+        .layer-item {
+            border-left: 4px solid #066ba9; /* Blue marker */
+            transition: all 0.3s ease;
+        }
+        .layer-item:hover {
+            border-left: 4px solid  #72b7e2; /* Green marker on hover */
+            background-color: #eff6ff; /* Lighter background on hover */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero Section (Sky Blue Theme) -->
+    <header class="bg-sky-600 text-white shadow-xl">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-center tracking-tight">
+                The Hydrosphere
+            </h1>
+            <nav class="mt-4 text-center">
+                <!-- Anchor link for internal navigation (if needed) -->
+                <a href="#layers" class="text-sky-200 hover:text-white transition duration-300 text-lg font-medium">↓</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Introduction Text Section -->
+        <section class="mb-10 text-center">
+            <div class="bg-white p-6 md:p-10 rounded-xl card-shadow mt-[-4rem] relative z-10 mx-auto max-w-4xl">
+                <p class="text-xl md:text-2xl font-light text-gray-700 leading-relaxed">
+                    <span class="font-bold text-sky-600">The Hydrosphere</span> describes all the water found on Earth, existing in its solid, liquid, and gaseous states. It includes oceans, seas, lakes, rivers, glaciers, ice caps, groundwater, and water vapor in the atmosphere; it is the driving force of the water cycle.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Hero Image Section (If you use the actual image URL) -->
+        <!-- NOTE: I have commented out your image tag and added a conceptual diagram link instead, as the image URL you provided is local. -->
+        <div class="hero-container mb-12 rounded-xl overflow-hidden card-shadow">
+            <!-- Replace 'Images/Atmosphere1.jpeg' with a publicly accessible image URL or a placeholder if needed. -->
+            <!-- For demonstration, I'm using a placeholder but keeping the original structure: -->
+            <!-- <img src="Images/Atmosphere1.jpeg" alt="Layers of the Earth's Atmosphere" class="hero-image"> -->
+            
+        <img src="Images/Hydrosphere.jpeg" alt = "Atmosphere" width="1450" height = "2000">
+        </div>
+
+        <!-- Layers/Definitions Section -->
+        <section id="layers" class="mt-12">
+            <h2 class="text-4xl font-bold text-center mb-8 text-sky-600">Hydrosphere</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                 <!-- Exosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-sky-800">Oceans</h3>
+                    <p class="text-gray-600">Contain about 97% of Earth's water, regulating the global climate by the distribution of heat through currents.</p>
+                </div>
+
+                <!-- Thermosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-sky-800">Cryosphere</h3>
+                    <p class="text-gray-600">That part of the hydrosphere composed of water in its solid state, for example ice caps, glaciers, and sea ice. It plays a major role in reflecting solar energy.</p>
+                </div>
+                
+
+                 <!-- Mesosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-sky-800">Groundwater</h3>
+                    <p class="text-gray-600">Water stored underground in the soil or pores and crevices in rock, and forming an important reservoir of freshwater.</p>
+                </div>
+
+                <!-- Stratosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-sky-800">The Water Cycle</h3>
+                    <p class="text-gray-600">ater is said to be continuously moving on, above, and below the surface in the forms of evaporation, condensation, and precipitation</p>
+                </div>
+                
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-6 text-center">
+        <p class="text-sm">&copy; Ojal Sharma</p>
+    </footer>
+
+</body>
+</html>

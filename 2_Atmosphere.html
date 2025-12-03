@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for aesthetic enhancements */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8faff; /* Very light blue/off-white */
+            color: #1f2937; /* Dark gray text */
+        }
+        /* Custom shadow for the main content cards */
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Ensure the image container covers the width and scales */
+        .hero-container {
+            width: 100%;
+            height: 140rem; /* Fixed height for visual consistency on desktop */
+            max-height: 140vh; /* Max height on mobile */
+        }
+        .hero-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        /* Custom styling for the layer definitions */
+        .layer-item {
+            border-left: 4px solid #3b82f6; /* Blue marker */
+            transition: all 0.3s ease;
+        }
+        .layer-item:hover {
+            border-left: 4px solid #10b981; /* Green marker on hover */
+            background-color: #eff6ff; /* Lighter background on hover */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero Section (Sky Blue Theme) -->
+    <header class="bg-blue-600 text-white shadow-xl">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-center tracking-tight">
+                The Atmosphere
+            </h1>
+            <nav class="mt-4 text-center">
+                <!-- Anchor link for internal navigation (if needed) -->
+                <a href="#layers" class="text-blue-200 hover:text-white transition duration-300 text-lg font-medium">Explore the Layers ↓</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Introduction Text Section -->
+        <section class="mb-10 text-center">
+            <div class="bg-white p-6 md:p-10 rounded-xl card-shadow mt-[-4rem] relative z-10 mx-auto max-w-4xl">
+                <p class="text-xl md:text-2xl font-light text-gray-700 leading-relaxed">
+                    <span class="font-bold text-blue-600">The atmosphere</span> is the layer of gases that surrounds Earth, acting as a crucial, multi-layered protective blanket for the planet. It is one of the four main spheres of the Earth, fundamentally connected to climate, weather, and life itself.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Hero Image Section (If you use the actual image URL) -->
+        <!-- NOTE: I have commented out your image tag and added a conceptual diagram link instead, as the image URL you provided is local. -->
+        <div class="hero-container mb-12 rounded-xl overflow-hidden card-shadow">
+            <!-- Replace 'Images/Atmosphere1.jpeg' with a publicly accessible image URL or a placeholder if needed. -->
+            <!-- For demonstration, I'm using a placeholder but keeping the original structure: -->
+            <!-- <img src="Images/Atmosphere1.jpeg" alt="Layers of the Earth's Atmosphere" class="hero-image"> -->
+            
+        <img src="Images/Atmosphere1.jpeg" alt = "Atmosphere" width="1450" height = "2000">
+        </div>
+
+        <!-- Layers/Definitions Section -->
+        <section id="layers" class="mt-12">
+            <h2 class="text-4xl font-bold text-center mb-8 text-blue-600">Major Atmospheric Layers</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                 <!-- Exosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Exosphere</h3>
+                    <p class="text-gray-600">The outermost layer, from about 700 km up to 10,000 km. Gas molecules here are very sparse and can escape into space. This is considered the final boundary before outer space and hosts many satellites.</p>
+                </div>
+
+                <!-- Thermosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Thermosphere</h3>
+                    <p class="text-gray-600">Spanning from 80 to 700 km, this layer is characterized by extremely high temperatures due to solar energy absorption. The International Space Station (ISS) orbits within this layer.</p>
+                </div>
+                
+
+                 <!-- Mesosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Mesosphere</h3>
+                    <p class="text-gray-600">Located between 50 and 80 km, this is the coldest layer of the atmosphere. It is also the region where most incoming meteoroids burn up due to friction.</p>
+                </div>
+
+                <!-- Stratosphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Stratosphere</h3>
+                    <p class="text-gray-600">Extends from 12 to 50 km and notably contains the vital ozone layer, which absorbs the majority of harmful solar ultraviolet (UV) radiation.</p>
+                </div>
+                
+                <!-- Troposphere -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Troposphere</h3>
+                    <p class="text-gray-600">The lowest layer, extending from the surface to about 12 km. This is where all Earth's weather occurs and it contains approximately 75% of the atmosphere's total mass.</p>
+                </div>
+
+               
+
+                <!-- Ionosphere (Modified to be distinct or integrate better) -->
+                <!-- Note: Ionosphere overlaps Thermosphere and Mesosphere, but listing it here as per your original structure. -->
+                <div class="bg-white p-6 rounded-lg layer-item card-shadow">
+                    <h3 class="text-2xl font-semibold mb-2 text-blue-800">Ionosphere</h3>
+                    <p class="text-gray-600">While not a distinct layer like the others, this is an active region within the thermosphere and mesosphere where solar radiation ionizes gases, creating the conditions for auroras and reflecting radio waves.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-6 text-center">
+        <p class="text-sm">&copy; Ojal Sharma</p>
+    </footer>
+
+</body>
+</html>
